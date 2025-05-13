@@ -2,7 +2,9 @@ import os
 import re
 
 output_dir = "output"
-html_file = os.path.join(output_dir, "icon_list.html")
+docs_dir = "docs"
+os.makedirs(docs_dir, exist_ok=True)
+html_file = os.path.join(docs_dir, "icon_list.html")
 github_base_url = "https://raw.githubusercontent.com/gt-dmori/icons/main/output/"
 
 # ファイル名で数字部分を抽出してソート
@@ -26,4 +28,4 @@ with open(html_file, "w", encoding="utf-8") as f:
     f.write("</tr>\n</table>\n")
     f.write("</body></html>\n")
 
-print(f"icon_list.html を {output_dir} に作成しました。") 
+print(f"icon_list.html を {docs_dir} に作成しました。") 
