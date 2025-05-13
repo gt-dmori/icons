@@ -1,5 +1,6 @@
 import os
 from PIL import Image
+from make_icon_list import make_icon_list
 
 input_dir = "images_5x5"
 output_dir = "output"
@@ -110,4 +111,7 @@ for fname in os.listdir(input_dir):
     if fname.lower().endswith((".png", ".jpg", ".jpeg")):
         process_image(os.path.join(input_dir, fname))
 
-print("分割・リサイズ完了！") 
+print("分割・リサイズ完了！")
+
+# アイコンリストHTMLも自動生成
+make_icon_list(output_dir=output_dir, docs_dir="docs") 

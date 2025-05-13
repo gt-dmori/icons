@@ -2,6 +2,10 @@
 
 TeamsのWebhookで使用するためのアイコンを作りたかった
 
+下記URLへアクセスすることで一覧を参照できます
+* https://gt-dmori.github.io/icons/icon_list.html
+
+
 ## 1.イメージ作成
 
 ChatGPTにお願いするのが結局一番楽
