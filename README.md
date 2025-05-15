@@ -23,6 +23,13 @@ ChatGPTにお願いするのが結局一番楽
 
 ---
 
+## .gitignoreについて
+- `__pycache__/` と `venv/` ディレクトリはGit管理対象外です。
+  - `__pycache__/`：Pythonのキャッシュファイル
+  - `venv/`：仮想環境ディレクトリ
+
+---
+
 ## split_icons.py
 
 ### 概要
